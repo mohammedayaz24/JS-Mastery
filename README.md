@@ -3,7 +3,7 @@ EAT-CODE-SLEEP-REPEAT
 <br>
 
  📘 JavaScript Fundamentals
-Chapters 1 & 2 — Variables, Declarations & Data Types
+**Chapters 1 & 2 — Variables, Declarations & Data Types**
 📦 Chapter 1: Variables & Declarations
 🧠 What are Variables?
 
@@ -115,7 +115,9 @@ let x = 10; // ❌ Error (redeclaration)
 console.log(count);
 var count = 42; // Output: undefined
 
-📦 Chapter 2: Data Types & Type System
+<br>
+
+**📦 Chapter 2: Data Types & Type System**
 🧠 What Are Data Types?
 
 Every value in JavaScript has a data type.
@@ -135,6 +137,8 @@ Undefined	let x;
 Null	let x = null;
 Symbol	Symbol("id")
 BigInt	123456789n
+
+
 🔹 Reference Data Types
 Type	Example
 Object	{ name: "Harsh" }
