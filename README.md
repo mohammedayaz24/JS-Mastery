@@ -212,6 +212,7 @@ console.log(typeof []);      // "object"
 console.log(typeof null);    // "object"
 console.log(typeof 123n);    // "bigint"
 
+<br>
 📌 Summary
 
 JavaScript is loosely typed
