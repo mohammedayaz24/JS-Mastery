@@ -53,12 +53,12 @@ newVar=22;//reassignment of vale
 /*when a varibale is created it is divided into two parts.the declaration part is going in upward direction
  and initialization part will be going towards downward direction*/ 
 
-console.log(a);
- var a= undefined;//go to top thats why TDZ tells it exist but cannot be accessed in terms of var(undefined)
+console.log(an);
+ var an= undefined;//go to top thats why TDZ tells it exist but cannot be accessed in terms of var(undefined)
  a= 40;
 
  //let
- console.log(d);
+ //console.log(d);
  let d=10;
 
  /* var-> hoist ->undefined
