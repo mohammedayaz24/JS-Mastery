@@ -1,5 +1,5 @@
 //Operators
-//Arithemtic , comparison , assignment , logical , unary , ternary
+//Arithemtic , comparison , assignment , logical , unary ,ternary
 
 //arithmetic operators
 //+ - / * % **
