@@ -66,3 +66,70 @@ for(let g=1;g<=val;g++){
         console.log(`${g} is odd`);
     }
 }
+
+//9.count how many number between 1 to 100 are divisible by 3 and 5
+console.log("count how many number between 1 to 100 are divisible by 3 and 5");
+for(let h=1;h<=100;h++){
+    if((h%3===0) && (h%5===0)){
+        console.log(h);
+    }
+}
+
+
+//problems related break and continue
+/* q1. write a loop from to 100 that:
+    print each number
+    stop completely when it finds the first number divisible by 7
+*/
+
+console.log("q1. write a loop that stops at divisible by 7:");
+for(let i=1;i<=100;i++){
+    console.log(i);
+    if(i%7===0){
+        break;
+    }
+}
+
+/*q2 : skip multiples of 3 
+    write a loop from 1 to 20 
+        skips numbers divisible by 3 and the prints others all
+ use continue*/
+//expected output ( 1 2 4 5 7 8 10)
+
+console.log("q2 : skip multiples of 3");
+for (let j=1;j<=20;j++){
+    if(j%3===0){
+        continue;
+    }
+    console.log(j);
+}
+
+/*q3 : print firdt 5 od  numbers only
+    write a loop from 1 to 100 that:
+        print only 5 odd numbers
+        then stop the loop
+    use both if ,continue and counter+ break
+    expected op{ 1 3 5 7 9}
+    */
+console.log("q3 : print firdt 5 od  numbers only");
+let count=0;
+for(let k=1;k<=100;k++){
+    if(k%2!==0){
+        count++;
+        console.log(k);
+    }
+    if(count===5){
+        break;
+    }
+}
+
+
+for(let l=1;l<=5;l++){
+    for(let m=1;m<=l;m++){
+        console.log(l
+            
+        );
+    }
+    console.log("\n");
+
+}
