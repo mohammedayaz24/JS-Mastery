@@ -126,9 +126,7 @@ for(let k=1;k<=100;k++){
 
 for(let l=1;l<=5;l++){
     for(let m=1;m<=l;m++){
-        console.log(l
-            
-        );
+        console.log(l);
     }
     console.log("\n");
 
