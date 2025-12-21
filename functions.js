@@ -155,3 +155,50 @@ function impureAdd(){
 }
 impureAdd(); //undefined if we try to print return value
 console.log(count); //value of count is modified outside the function
+
+//closures
+//a closure is a function that returns another function
+//the inner function has access to the outer function(parent function)varoiables
+console.log("Closures example");
+function abcd3(){
+    let a=10;
+    return function(){
+        console.log(a);
+    }
+}
+
+//lexical scoping
+//lexical scoping means that the inner function has access to the variables of the outer function
+console.log("Lexical scoping example");
+function grandParent(){
+    let a= "grandParent variable";
+    function parent(){
+        let b= "parent variable";
+        function child(){
+            let c= "child variable";
+            console.log(a); //accessing grandParent variable
+        }
+        child();
+    }
+    parent();
+}
+grandParent();
+
+
+
+//IIFE(Immediately Invoked Function Expression)
+console.log("IIFE example");
+(function(){
+    console.log("IIFE function executed");
+})();
+
+//hoisting
+//hoisting is a javascript mechanism where variables and function declarations are moved
+//  to the top of their scope before code execution
+
+console.log("Hoisting example");
+hoistedFunction(); //function can be called before its declaration due to hoisting
+
+function hoistedFunction(){
+    console.log("This function is hoisted");
+}
