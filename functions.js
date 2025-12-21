@@ -201,4 +201,5 @@ hoistedFunction(); //function can be called before its declaration due to hoisti
 
 function hoistedFunction(){
     console.log("This function is hoisted");
-}
+}//works only for function declarations not for function expressions or arrow functions
+

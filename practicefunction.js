@@ -27,3 +27,40 @@ let multiply=(x,y) => {
     return x * y;
 }
 console.log(multiply(5,10));
+
+
+//Q3 : use rest parameter to accepet any number of scores and return their sum
+console.log("Q3 : average of scores using rest parameter");
+
+function getScore(...scores){
+    let total=0;
+    scores.forEach(function(val){
+        total += val;
+    });
+    return total;
+}
+console.log (getScore(90, 80, 70, 60));
+
+//q4 early return
+
+function checkAge(age){
+    if(age < 18) return age + " "+ "minor";
+    return age+ " " + "adult";
+}
+console.log(checkAge(16));
+console.log(checkAge(20));
+
+//Q5 pass a function to another function and execute it inside
+
+function abcd(val){
+    val();
+}
+
+abcd(function(){
+    console.log("function passed as argument and executed inside another function");
+});
+
+//Q6what is higeher order function?
+
+//A higher-order function is a function that either takes one or more functions as arguments 
+// or returns a function as its result or takes a function as a parameter
