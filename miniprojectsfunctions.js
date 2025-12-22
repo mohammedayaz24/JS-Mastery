@@ -12,5 +12,17 @@ function BMI(weight, height){
     return;
 
 }
-
 BMI(74, 1.75);
+
+
+
+// 2 > Create a reusable discount calculator function(HoF)
+
+function discountCalculator(discount){
+    return function(price){
+        return price - price * (discount/100);
+    }
+}
+let discounter = discountCalculator(10);//10% discount
+console.log(discounter(1000));
+//price=1000 => 1000 * (10/100)=100 => final price= 1000-100=900
