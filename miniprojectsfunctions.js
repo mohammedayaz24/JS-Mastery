@@ -26,3 +26,23 @@ function discountCalculator(discount){
 let discounter = discountCalculator(10);//10% discount
 console.log(discounter(1000));
 //price=1000 => 1000 * (10/100)=100 => final price= 1000-100=900
+
+
+
+// 3 > build a counter using closure
+
+function counter(){
+    let count=0;
+    return function(){
+        count++;
+        console.log(count);
+    }
+}
+let c=counter();
+console.log(c());//1
+console.log(c());//2
+console.log(c());//3
+
+let d=counter();
+console.log(d());//1
+console.log(d());//2
