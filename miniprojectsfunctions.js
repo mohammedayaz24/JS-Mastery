@@ -46,3 +46,19 @@ console.log(c());//3
 let d=counter();
 console.log(d());//1
 console.log(d());//2
+
+//4 > create a pure function to transform a value
+
+function transformValue(val){
+    return val*2;
+}
+console.log(transformValue(5)); //10
+
+//5 > use IIFE to create a private variable
+
+let password = (function(){
+    let pwd="mySecret123";
+    console.log(pwd);//will work here
+
+})();
+console.log(pwd); //undefined, pwd is not accessible outside the IIFE
