@@ -49,6 +49,7 @@ console.log("Before splice:",scores);
 scores.splice(2,1); //removes 1 element at index 2
 console.log(scores); //[10,20,40,50]
 
+
 //6. slice() - returns a new array from a specific index
 console.log("Before slice:",scores);
 scores.splice(1,3); //returns elements from index 1 to 3 (excluding 3)
@@ -89,6 +90,7 @@ let newarray3=array3.map(function(val){
     if(val>25) return val;
 })//returns a new array
 console.log(newarray3);//[undefined, undefined, 30, 40, 50]
+
 
 //filter()- creates a new array with all elements that pass 
 // the test implemented by the provided function
@@ -175,3 +177,31 @@ fruits[2] = "Kiwi";
 console.log(fruits); //["Pineapple", "Apple", "Kiwi", "Orange", "Mango"]
 fruits.splice(2,1,"Kiwiii");//another way to replace
 console.log(fruits); //["Pineapple", "Apple", "Kiwiii", "Orange", "Mango"]
+
+// 4 > insert red and blue at index 1 in this array
+// let colors = ["Green", "Yellow"];
+
+let colors = ["Green", "Yellow"];
+colors.splice(1,0,"Red","Blue");
+console.log(colors); //["Green", "Red", "Blue", "Yellow"]
+
+// 5 .sort this array in ascending order and then reverse it
+// let names=["zaara","mona","aly","sara","dina"];
+
+let names=["zaara","mona","aly","sara","dina"];
+names.sort().reverse();
+
+//6 use .map to square eaach number
+
+let numbers=[1,2,3,4,5];
+let squaredNumbers=numbers.map(function(val){
+    return val*2;
+});
+console.log(squaredNumbers);//[1,4,9,16,25]
+
+//7 use .filter to filter numbers greater than 10
+let numbers2=[1,2,3,4,5,6,7,8,9,10];
+let filteredNumbers=numbers2.filter(function(val){
+    return val>10;
+});
+console.log(filteredNumbers);//[] no numbers greater than 10
