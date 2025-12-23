@@ -201,7 +201,69 @@ console.log(squaredNumbers);//[1,4,9,16,25]
 
 //7 use .filter to filter numbers greater than 10
 let numbers2=[1,2,3,4,5,6,7,8,9,10];
-let filteredNumbers=numbers2.filter(function(val){
+let filteredNumbers=numbers2.filter(val =>{
     return val>10;
 });
 console.log(filteredNumbers);//[] no numbers greater than 10
+
+
+// 8 > use .reduce to get the sum of this array
+let numArray=[10,20,30,40,50];
+
+let total=numArray.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+},0);
+console.log(total);//150
+
+
+// 9 > use .find to get the first number greater than 10
+let numArray2=[5,8,12,15,7,3];
+let firstGreaterThan10=numArray2.find(val => {
+    return val>10;
+});
+console.log(firstGreaterThan10);//12
+
+// 10 > use .some() to check if there is any student has scored below 35;
+let studentScores=[45,67,89,23,90,34];
+let hasFailed=studentScores.some(val => {
+    return val<35;
+});
+console.log(hasFailed);//true
+
+
+// 11 > use .every() to check if all numbers are even
+console.log("question 11");
+let evenNumbers=[2,4,6,8,10];
+let allEven =evenNumbers.every(val => {
+        return val%2===0;
+});
+console.log(allEven);//true
+
+
+// 12 > Destructure this array to get firstname and lastname
+
+let fullName = ["Mohammed","Ayaz"];
+let [firstName, lastName]=fullName;
+console.log(firstName,lastName);//Mohammed Ayaz
+
+
+// 13 > Merge to array using spraed operator
+console.log("merge two arrays using spread operator");
+let arr01=[1,2];
+let arr2=[3,4];
+let mergedArray2=[...arr01,...arr2];
+console.log(mergedArray2);//[1,2,3,4]
+
+
+// 14 > add india to the start of this array usning spread
+
+let countries =["UK","USA"];
+countries=["India",...countries];
+console.log(countries);//["India","UK","USA"]
+
+
+//15 > Clone this array properly (not by reference)
+
+let orgarr=[1,2,3,4,5];
+let clonearr=[...orgarr];
+console.log(clonearr);//[1,2,3,4,5]
