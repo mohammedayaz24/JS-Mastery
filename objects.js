@@ -126,11 +126,44 @@ console.log(stud1?.address?.city);// returns undefined
 
 
 //practice question
-
+console.log("practice question");
 //1 > create an object for a student with name,age ,and isenrolled
-
+console.log("1");
 let student={
     name:"Ayaz",
     age:20,
     isenrolled:true
 };
+console.log(student);
+
+// 2 given a dynamic key let key="age",how will you access user[key]
+
+let key="age";
+const users={
+    name:"ayaz",
+    age:20
+}
+console.log(users[key]);
+
+//destructure the key "first-name" as a variable called firstNmae
+
+const user5={
+    "first-name":"ayaz",
+};
+
+let { "first-name": firstName}=user5;
+console.log(firstName);//ayaz
+
+
+//use object.ebtries to print all key value pairs as 
+//title : javascript
+//duration: 4 weeks
+
+const course={
+    titlt:"javascript",
+    duration:"4 weeks"
+};
+
+let entries=Object.entries(course).forEach(function(val){
+    console.log(val[0],val[1]);
+})
