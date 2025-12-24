@@ -105,3 +105,16 @@ console.log(user1);
 console.log(user2);
 
 
+//optional chaining
+let stud1 ={
+    name : "ayaz",
+    age : 20,
+    addressss:{  //even key name is change to handle this
+        city:"ambur",
+        pin : 635802
+    },
+};
+
+console.log(stud1?.address?.city);// returns undefined
+
+//computed properties
