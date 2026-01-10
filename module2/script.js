@@ -74,3 +74,7 @@ document.querySelector("body").removeChild(h3);
 let nh1=document.createElement("h1");
 nh1.textContent="helloooo";
 document.querySelector("div").append(nh1);
+
+
+//style updates via  .style and classList(add,remove,toggle)
+
