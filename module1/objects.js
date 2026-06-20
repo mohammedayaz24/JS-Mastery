@@ -111,7 +111,7 @@ let role= "admin";
 let stud1 ={
     name : "ayaz",
     age : 20,
-    addressss:{  //even key name is change to handle this
+    address:{  //even key name is change to handle this
         city:"ambur",
         pin : 635802,
         [role]:"ayaz" //computed properties

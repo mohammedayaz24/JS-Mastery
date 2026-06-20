@@ -2,10 +2,10 @@
 
 
 let h1 =document.querySelector("h1");
-h1.style.color="red";
+h1.style.color="teal";
 h1.style.backgroundColor="lightgrey";
-h1.style.fontFamily="Gilroy";
-h1.style.tectTransform="Capitalize";
+h1.style.fontFamily="Arial";
+h1.style.textTransform="capitalize";
 console.dir(h1);
 
 

@@ -96,7 +96,7 @@ abcd2("a","b","c","d","e");
 //return statement is used to return a value from a function
 
 function aaa(v){
-    return "hello "+ v;
+    return "hello" + v;
 }
 let val= aaa("ayaz");
 console.log(val);

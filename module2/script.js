@@ -9,7 +9,8 @@
 
 
 //Selecting Elements
-//getElementById  , getElementsByClassName ,[modern selectors] -> querySelector, querySelectorAll
+//getElementById  , getElementsByClassName ,
+// [modern selectors] -> querySelector, querySelectorAll
 
 
 //Text and Content Access
@@ -19,13 +20,15 @@ let h1=document.querySelector("h1");
 console.dir(h1);
 h1.textContent="hello ayaz from changeContent";
 h1.innerText="hello ayaz from innerText";
-//textContent and innerText are same
+// h1.innerHTML="<i>hello ayaz from innerHTML</i>";
 
+//textContent and innerText are same
+console.log(h1.textContent);
 
 //innerHTML adds html to content
 let h2=document.querySelector("h2");
 h2.innerHTML="<i>hello ayaz from innerHTML</i>";
-h2.hidden=true;
+h2.hidden=false;//to hide the element
 
 
 
@@ -35,7 +38,7 @@ h2.hidden=true;
 //getAttribute  ,setAtribute, removeAttribute
 
 //setAttribute
-//syntax->         variable.setAttribute("attribute_name",value_u_want to chanage);
+//syntax->  variable.setAttribute("attribute_name","value_u_want to chanage");
 
 let a = document.querySelector("a");
 a.setAttribute("href","https://www.google.com");
@@ -46,12 +49,12 @@ img.setAttribute("src","https://images.unsplash.com/photo-1766921466771-29bd27bf
 
 
 //getAttribute
-//syntax->         variable.getAttribute("attribute_name");
+//syntax->   variable.getAttribute("attribute_name");
 console.log(a.getAttribute("href"));
 
 
 //remove attributes
-a.removeAttribute("href");//removed check in elements
+// a.removeAttribute("href");//removed check in elements
 
 
 //** important **
@@ -67,7 +70,7 @@ h3.textContent="doing dynamic dom manipulation";
 document.querySelector("body").appendChild(h3);
 
 //removeChild
-document.querySelector("body").removeChild(h3);
+// document.querySelector("body").removeChild(h3);
 
 
 //shorthand
@@ -77,4 +80,5 @@ document.querySelector("div").append(nh1);
 
 
 //style updates via  .style and classList(add,remove,toggle)
+//how to change css through js
 
