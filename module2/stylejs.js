@@ -22,6 +22,7 @@ h2.classList.toggle("styleclass");
 
 
 
+
 ///practice question
 
 let cl=document.querySelectorAll("li");
