@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#181818;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:420px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+.password-box{
+    display:flex;
+}
+
+.password-box input{
+    flex:1;
+    border-radius:6px 0 0 6px;
+}
+
+.password-box button{
+    width:55px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    cursor:pointer;
+    border-radius:0 6px 6px 0;
+    font-size:18px;
+}
+
+small{
+    display:block;
+    margin-top:5px;
+    color:red;
+}
+
+.strength-bar{
+    height:10px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin:20px 0;
+}
+
+#progress{
+    width:0%;
+    height:100%;
+    background:red;
+    transition:.3s;
+}
+
+#strength{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.rules p{
+    margin:8px 0;
+}
+
+#submit{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+#submit:hover{
+    background:#2e7d32;
+}
+</style>
+<body>
+
+    <div class="container">
+
+        <h1>Login</h1>
+
+        <form id="loginForm">
+            <div class="input-box">
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+                <small id="emailError"></small>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                    >
+
+                    <button type="button" id="toggleBtn">
+                        👁
+                    </button>
+                </div>
+
+                <small id="passwordError"></small>
+            </div>
+
+            <input id ='submit' type="submit">
+
+        </form>
+
+    </div>
+
+    <script src="practiceforms.js"></script>
+
+</body>
+</html>
