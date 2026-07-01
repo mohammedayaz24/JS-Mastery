@@ -96,7 +96,7 @@ function abcd3(a){
 let bind = abcd3.bind(obj3,[1,2,3]);
 bind();
 
-
+//end of this keyword in JavaScript
 
 
 
