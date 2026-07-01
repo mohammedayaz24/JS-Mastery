@@ -99,4 +99,5 @@ bind();
 //end of this keyword in JavaScript
 
 
-
+// example of this keyword in JavaScript
+// name card or item card rendering
