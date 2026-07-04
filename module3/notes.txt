@@ -1,2 +1,3 @@
 next up OOP in JS
 then asynx,await
+then promise and project
