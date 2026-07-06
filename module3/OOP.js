@@ -94,3 +94,4 @@ class Admin extends User {
 let u1 = new User('John Doe', '123 Main St', 'johndoe', 'john.doe@example.com', 'User');
 let u2 = new User('Jaane', '456 Oak Ave', 'janedoe', 'jane.doe@example.com', 'User');
 let a1 = new Admin('Jane Smith', '456 Oak Ave', 'janesmith', 'jane.smith@example.com', 'Admin');
+//
