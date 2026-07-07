@@ -1,5 +1,7 @@
 //async 
 //async/await is just cleaner syntax built on top of Promises. It doesn't replace Promises—it makes them easier to work with.
+
+
 let pr = new Promise(function (res , rej){
     setTimeout(() => {
         let rn = Math.floor(Math.random()*10);

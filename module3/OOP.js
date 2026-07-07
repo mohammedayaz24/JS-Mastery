@@ -123,7 +123,8 @@ arabianCoffee.drink()
 // console.log(Math.floor(Math.random()*10)*1000);
 
 //callback
-//callback - if you send a function to another function in parameter then that parameterized function is calledas callback 
+//callback - if you send a function to another function in parameter then that 
+// parameterized function is calledas callback 
 function willprintlater(fnc){
     setTimeout(fnc , Math.floor(Math.random()*20)*1000);
             
